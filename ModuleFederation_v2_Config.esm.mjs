@@ -195,7 +195,16 @@ function ModuleFederation_v2_Config_Fun( {
      * 1、值类型：string，必须以'function'开头。<br />
      */
     // getPublicPath: `function(){}`,
+    /**
+     * 用于控制模块联盟的开发行为。<br />
+     * 1、一般来说，该选项用于远端模块使用者，这样当远端模块提供者发生变化后，远端模块使用者就可以实时热更新、加载远端模块提供者最新的“Type”。<br />
+     * 2、当然，远端模块提供者也可以是使用其他远端模块提供者提供的模块，从而也算是远端模块使用者了。<br />
+     */
     dev: {
+      /*
+       该选项跟webpack的顶级配置项devServer的liveReload选项是一样功用的。
+       注意：不知道为什么在“远端模块提供者”中，该选项设置成true时，会报“Babel”相关的错误！
+       */
       disableLiveReload: false,
       disableHotTypesReload: false,
       disableDynamicRemoteTypeHints: false,
@@ -218,7 +227,6 @@ function ModuleFederation_v2_Config_Fun( {
        *     compileInChildProcess: true,
        *   }
        * </code>
-       * 2、
        */
       generateTypes: {
         extractRemoteTypes: true,
