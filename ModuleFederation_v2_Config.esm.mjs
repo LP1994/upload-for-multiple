@@ -64,7 +64,7 @@ function ModuleFederation_v2_Config_Fun( {
      * 2、在"@module-federation/enhanced v0.8.1"中，发现有效的能运行起来的就该选项的配置写法只能是如下这种：
      * <code>
      * remotes: {
-     *   Remote_Vue_UploadForSingle: `Remote_UploadForSingle@${ process.env.RemoteUploadForSingleURL }RemoteEntry_UploadForSingle.js`,
+     *   RemoteUploadForMultiple: `Remote_UploadForMultiple@${ process.env.RemoteUploadForMultipleURL }RemoteEntry_UploadForMultiple.js`,
      * }
      * PS：(RemotesItem | RemotesObject)[]，这个类型的配置写法，都会报错！
      * </code>
@@ -73,7 +73,7 @@ function ModuleFederation_v2_Config_Fun( {
      */
     /*
      remotes: {
-     Remote_Vue_UploadForSingle: `Remote_UploadForSingle@${ process.env.RemoteUploadForSingleURL }RemoteEntry_UploadForSingle.js`,
+     RemoteUploadForMultiple: `Remote_UploadForMultiple@${ process.env.RemoteUploadForMultipleURL }RemoteEntry_UploadForMultiple.js`,
      },
      */
     /**
