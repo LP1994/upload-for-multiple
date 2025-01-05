@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7c7dac7c-cb49-4392-8126-311043f5908f" name="upload-for-multiple" url="http://localhost:8090/upload-for-multiple/">
+        <fileTransfer mountedRoot="G:\WebStormWS\upload-for-multiple" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
