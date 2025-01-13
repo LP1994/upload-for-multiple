@@ -140,7 +140,7 @@ main {
         </button>
       </section>
     </article>
-    <UploadForMultiple />
+    <!--<UploadForMultiple />-->
   </main>
 </template>
 <script
@@ -164,7 +164,7 @@ import {
   onMounted,
 } from 'vue';
 
-import UploadForMultiple from 'componentsDir/UploadForMultiple.Vue3.ts.vue';
+// import UploadForMultiple from 'componentsDir/UploadForMultiple.Vue3.ts.vue';
 
 type T_State = {
   titleText: string;
