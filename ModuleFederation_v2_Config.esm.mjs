@@ -96,6 +96,15 @@ function ModuleFederation_v2_Config_Fun( {
           // name: '',
         },
       },
+      {
+        './Bookmarks': {
+          import: [
+            './src/components/Bookmarks.Vue3.ts.vue',
+          ],
+          // 外露模块的自定义块名称，可选。
+          // name: '',
+        },
+      },
     ],
     shared: {
       vue: {
